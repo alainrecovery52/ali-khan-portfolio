@@ -357,3 +357,33 @@ footer{
     transform:rotate(20deg) scale(1.08);
     box-shadow:0 0 20px rgba(56,189,248,.4);
 }
+/* ===== Light Mode ===== */
+
+body.light-mode{
+    background:linear-gradient(135deg,#f8fafc,#e0f2fe);
+    color:#0f172a;
+}
+
+body.light-mode .navbar{
+    background:rgba(255,255,255,.8);
+}
+
+body.light-mode .nav-links a{
+    color:#0f172a;
+}
+
+body.light-mode .hero p,
+body.light-mode .about p,
+body.light-mode .contact p{
+    color:#334155;
+}
+
+body.light-mode .skill-card,
+body.light-mode .project-card{
+    background:rgba(255,255,255,.7);
+    color:#0f172a;
+}
+
+body.light-mode footer{
+    color:#475569;
+}
