@@ -80,3 +80,17 @@ if (yearElement) {
   yearElement.innerHTML =
     `© ${new Date().getFullYear()} Ali Khan | All Rights Reserved.`;
 }
+// ===== Dark / Light Mode =====
+
+const themeToggle = document.getElementById("theme-toggle");
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    themeToggle.textContent =
+      document.body.classList.contains("light-mode")
+        ? "🌙"
+        : "☀️";
+  });
+}
