@@ -328,3 +328,32 @@ footer{
         padding:12px 16px;
     }
 }
+/* ===== Theme Button ===== */
+
+#theme-toggle{
+    position:fixed;
+    top:90px;
+    right:25px;
+    z-index:9999;
+    
+    width:45px;
+    height:45px;
+    padding:0;
+    
+    border:1px solid rgba(56,189,248,.4);
+    border-radius:50%;
+    
+    background:rgba(15,23,42,.8);
+    color:#fff;
+    
+    cursor:pointer;
+    font-size:20px;
+    
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    transform:rotate(20deg) scale(1.08);
+    box-shadow:0 0 20px rgba(56,189,248,.4);
+}
