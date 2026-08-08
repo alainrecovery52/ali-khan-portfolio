@@ -444,3 +444,89 @@ body.light-mode footer{
         width:0;
     }
 }
+/* ===== Premium About Card ===== */
+
+.about-card{
+    max-width:950px;
+    margin:0 auto;
+    padding:45px;
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(56,189,248,.2);
+    border-radius:28px;
+
+    backdrop-filter:blur(15px);
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+    transition:.4s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(56,189,248,.6);
+    box-shadow:0 25px 70px rgba(56,189,248,.12);
+}
+
+.about-icon{
+    min-width:100px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:25px;
+    font-size:48px;
+
+    background:rgba(56,189,248,.1);
+    border:1px solid rgba(56,189,248,.3);
+}
+
+.about-content h3{
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.about-content p{
+    margin-bottom:12px;
+}
+
+.about-highlights{
+    display:flex;
+    gap:35px;
+    margin-top:25px;
+}
+
+.about-highlights div{
+    display:flex;
+    flex-direction:column;
+}
+
+.about-highlights strong{
+    font-size:25px;
+    color:#38bdf8;
+}
+
+.about-highlights span{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .about-card{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .about-highlights{
+        justify-content:center;
+        gap:25px;
+    }
+}
